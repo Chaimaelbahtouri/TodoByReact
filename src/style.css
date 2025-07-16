@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Monoton&family=Rubik+Gemstones&display=swap');
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(27, 26, 26);
+  }
+
+  .input {
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(56, 52, 52);
+    outline: none;
+    border: 1px solid #545aa7;
+    border-radius: 5px;
+  }
+
+  .button {
+    padding:10px;
+    font-size:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #545aa7;
+    border-radius: 5px;
+    color: rgb(53, 50, 50);;
+    
+  }
+  .button:hover{
+    background-color: #da70d6 ;
+  }
+
+  .background{
+          background-image:url("/public/img/p2.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100vh;
+          width: 100vw;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+  }
+
+  .head-div{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        position: relative;
+        z-index: 1;
+  }
+
+  .head {
+    font-family:Rubik Gemstones, system-uif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .App{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  /*  styling for task list (ul/li)*/
+
+  .task-item {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    padding-right: 5px;
+  }
+  .task-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;          
+    border: 2px solid #ccc;         
+    border-radius: 10px;             
+    padding: 15px;                    
+    max-height: 300px;                
+    overflow-y: auto;
+  }
+
+  .task-item li {
+    background-color: #eeebeb;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(63, 62, 62);
+  }
+  
+  .task-item li button {
+    background-color:#da70d6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.8s;
+  }
+  .task-item li button:hover {
+    background-color:#9370db;
+  }
